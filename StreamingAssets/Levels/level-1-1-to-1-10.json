@@ -1,0 +1,2642 @@
+{
+ "schemaVersion": "1.0",
+ "stage": 1,
+ "stageName": "第一大关 · 白天 · 前院草坪",
+ "generatedBy": "design-strategist",
+ "humanReadableSource": "level-1-1-to-1-10.md",
+ "note": "与 level-1-1-to-1-10.md 同源；如有冲突以 .md 为准。所有时间单位为秒，速度单位为格/秒，预算单位为刷怪点数。",
+ "levels": [
+  {
+   "id": "1-1",
+   "stageId": 1,
+   "displayName": "教学：种下你的豌豆射手",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    3
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 150,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 1,
+   "availableCards": [
+    "PeaShooter"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 4,
+   "flagWaveIndices": [],
+   "finalWaveIndex": 4,
+   "firstWaveGate": {
+    "type": "PlantCount",
+    "plantId": "PeaShooter",
+    "count": 2,
+    "maxWaitSeconds": 999.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 0,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [],
+     "maxDurationSeconds": 30.0,
+     "earlyAdvanceDelaySeconds": 8.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": "由教学门控触发：种下第 2 个豌豆射手后才出现第 1 只僵尸"
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 0,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [],
+     "maxDurationSeconds": 30.0,
+     "earlyAdvanceDelaySeconds": 8.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 0,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [],
+     "maxDurationSeconds": 30.0,
+     "earlyAdvanceDelaySeconds": 8.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": true,
+     "pointBudget": 0,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [],
+     "maxDurationSeconds": 30.0,
+     "earlyAdvanceDelaySeconds": 8.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": "屏幕红字 FINAL WAVE"
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "SunFlower",
+    "displayName": "向日葵",
+    "extra": "替换角色：三月七"
+   },
+   "specialRules": [
+    "只有第 3 行草坪可种植与刷怪，其余行禁用",
+    "种下第 2 个豌豆射手前不会有任何僵尸出现（不设超时强制）",
+    "卡片固定为豌豆射手 1 张，不可自选",
+    "无旗帜波，但第 4 波显示 FINAL WAVE",
+    "全场共 5 只普通僵尸（原版明示数量）",
+    "首次进入播放教学引导：点击种子包 -> 点击草坪种植"
+   ],
+   "confidence": "原版",
+   "notes": "初始阳光 150 为中等置信（标准关为 50），见 wave-schema.md U-4。"
+  },
+  {
+   "id": "1-2",
+   "stageId": 1,
+   "displayName": "引入向日葵与旗帜波",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    2,
+    3,
+    4
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 75,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 2,
+   "availableCards": [
+    "PeaShooter",
+    "SunFlower"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 6,
+   "flagWaveIndices": [
+    6
+   ],
+   "finalWaveIndex": 6,
+   "firstWaveGate": {
+    "type": "PlantCount",
+    "plantId": "SunFlower",
+    "count": 3,
+    "maxWaitSeconds": 45.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 1,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 1,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 4,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "CherryBomb",
+    "displayName": "樱桃炸弹",
+    "extra": ""
+   },
+   "specialRules": [
+    "草坪扩为 3 行（第 2/3/4 行），第 1、5 行禁用",
+    "首次出现摇旗僵尸与「一大波僵尸正在接近」提示",
+    "教学意图：先铺 2~3 株向日葵，再补输出"
+   ],
+   "confidence": "原版",
+   "notes": "首波门控「种下第 3 株向日葵」为估算/待确认，兜底 45 秒；如实现成本过高可改为纯计时 25 秒。"
+  },
+  {
+   "id": "1-3",
+   "stageId": 1,
+   "displayName": "引入路障僵尸与樱桃炸弹",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    2,
+    3,
+    4
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 3,
+   "availableCards": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 8,
+   "flagWaveIndices": [
+    8
+   ],
+   "finalWaveIndex": 8,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 1,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 1,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 5,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "Wallnut",
+    "displayName": "坚果墙",
+    "extra": "替换角色：丹恒"
+   },
+   "specialRules": [
+    "草坪为 3 行（第 2/3/4 行）",
+    "首次出现路障僵尸（380 点护甲）",
+    "樱桃炸弹为 3x3 范围，避免放边缘浪费覆盖"
+   ],
+   "confidence": "原版",
+   "notes": "首波计时 25 秒为估算。"
+  },
+  {
+   "id": "1-4",
+   "stageId": 1,
+   "displayName": "首次开放 5 行全草坪",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 4,
+   "availableCards": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb",
+    "Wallnut"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 10,
+   "flagWaveIndices": [
+    10
+   ],
+   "finalWaveIndex": 10,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 7,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Item",
+    "id": "Shovel",
+    "displayName": "铲子",
+    "extra": "工具，非植物；1-5 教学使用"
+   },
+   "specialRules": [
+    "首次开放 5 行全草坪",
+    "坚果墙入列：教学点「把坚果放在输出前面」",
+    "奖励为道具铲子，不是植物"
+   ],
+   "confidence": "原版",
+   "notes": "本关不是传送带关；传送带关为 1-5 与 1-10。"
+  },
+  {
+   "id": "1-5",
+   "stageId": 1,
+   "displayName": "小游戏：坚果保龄球（传送带）",
+   "terrain": "Day",
+   "levelType": "ConveyorMiniGame",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 0,
+   "sunFallsFromSky": false,
+   "cardSelection": "传送带",
+   "cardSlots": 0,
+   "availableCards": [
+    "Wallnut",
+    "ExplodeNut"
+   ],
+   "cardPool": [],
+   "hasConveyor": true,
+   "conveyor": {
+    "supplyMode": "概率",
+    "supplyCount": "无限",
+    "intervalSeconds": 8.0,
+    "capacity": 8,
+    "entries": [
+     {
+      "plantId": "Wallnut",
+      "chancePercent": 80
+     },
+     {
+      "plantId": "ExplodeNut",
+      "chancePercent": 20
+     }
+    ]
+   },
+   "waveCount": 8,
+   "flagWaveIndices": [
+    8
+   ],
+   "finalWaveIndex": 8,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 20.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 6,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "PotatoMine",
+    "displayName": "土豆地雷",
+    "extra": ""
+   },
+   "specialRules": [
+    "不使用阳光、不能自由选卡，植物全部由传送带提供",
+    "坚果放置后沿本行向右滚动（非固定站位），撞击僵尸造成击杀并可弹射",
+    "伤害换算：普通僵尸 1 击必杀，路障僵尸 2 击",
+    "爆炸坚果命中即爆：3x3 范围、1800 点伤害",
+    "坚果滚到屏幕右端不会消失，可回收再利用",
+    "本关首次出现疯狂戴夫，并教学使用铲子",
+    "无撑杆僵尸"
+   ],
+   "confidence": "原版",
+   "notes": "传送带 80/20 比例与推送间隔 8 秒均为估算（原版未公开，见 U-11 / U-9）。"
+  },
+  {
+   "id": "1-6",
+   "stageId": 1,
+   "displayName": "引入撑杆僵尸与土豆地雷",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 5,
+   "availableCards": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb",
+    "Wallnut",
+    "PotatoMine"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 10,
+   "flagWaveIndices": [
+    10
+   ],
+   "finalWaveIndex": 10,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 7,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "SnowPea",
+    "displayName": "寒冰射手",
+    "extra": "替换角色：彦卿"
+   },
+   "specialRules": [
+    "撑杆僵尸首次登场：0.4 格/秒，跃过本行第一株植物后降为 0.2128 格/秒",
+    "撑杆僵尸不参与常规随机，仅由固定波投放",
+    "土豆地雷入列：需 15 秒破土"
+   ],
+   "confidence": "原版",
+   "notes": "高坚果可挡撑杆，但第一大关未解锁。"
+  },
+  {
+   "id": "1-7",
+   "stageId": 1,
+   "displayName": "首次 2 面旗 / 20 波",
+   "terrain": "Day",
+   "levelType": "Normal",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "固定",
+   "cardSlots": 6,
+   "availableCards": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb",
+    "Wallnut",
+    "PotatoMine",
+    "SnowPea"
+   ],
+   "cardPool": [],
+   "hasConveyor": false,
+   "waveCount": 20,
+   "flagWaveIndices": [
+    10,
+    20
+   ],
+   "finalWaveIndex": 20,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 11,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 12,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 13,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 14,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 15,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 7,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 16,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 7,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 17,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 18,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 19,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 9,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 20,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 12,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "Chomper",
+    "displayName": "大嘴花",
+    "extra": ""
+   },
+   "specialRules": [
+    "本大关第一个 20 波长关：10 波铺垫 -> 旗帜 -> 回落 -> 19~20 波冲刺",
+    "寒冰射手入列：减速 50% / 持续 10 秒",
+    "无铁桶僵尸"
+   ],
+   "confidence": "原版",
+   "notes": "旗帜位于第 10、20 波，符合 wave-schema 5.8 规则。"
+  },
+  {
+   "id": "1-8",
+   "stageId": 1,
+   "displayName": "首次自由选卡（6 槽）+ 铁桶僵尸",
+   "terrain": "Day",
+   "levelType": "CardSelect",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "自选",
+   "cardSlots": 6,
+   "availableCards": [],
+   "cardPool": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb",
+    "Wallnut",
+    "PotatoMine",
+    "SnowPea",
+    "Chomper"
+   ],
+   "hasConveyor": false,
+   "waveCount": 10,
+   "flagWaveIndices": [
+    10
+   ],
+   "finalWaveIndex": 10,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 8,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "GatlingPea",
+    "displayName": "双发射手",
+    "extra": "替换角色：流萤；运行时 ID=GatlingPea / 目录=Repeater"
+   },
+   "specialRules": [
+    "首次开放自由选卡：从 7 张池中选 6 张带入",
+    "铁桶僵尸首次登场：护甲 1100 点",
+    "本关无撑杆僵尸（按原版登场表）",
+    "大嘴花入池：吞噬即死，但有 42 秒咀嚼真空期"
+   ],
+   "confidence": "原版",
+   "notes": "自选卡关：availableCards 为空，运行时由玩家从 cardPool 选 6 张。"
+  },
+  {
+   "id": "1-9",
+   "stageId": 1,
+   "displayName": "自由选卡（6 槽）+ 撑杆回归",
+   "terrain": "Day",
+   "levelType": "CardSelect",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 50,
+   "sunFallsFromSky": true,
+   "cardSelection": "自选",
+   "cardSlots": 6,
+   "availableCards": [],
+   "cardPool": [
+    "PeaShooter",
+    "SunFlower",
+    "CherryBomb",
+    "Wallnut",
+    "PotatoMine",
+    "SnowPea",
+    "Chomper",
+    "GatlingPea"
+   ],
+   "hasConveyor": false,
+   "waveCount": 20,
+   "flagWaveIndices": [
+    10,
+    20
+   ],
+   "finalWaveIndex": 20,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 25.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 3,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 4,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 11,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 12,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 5,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 13,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 14,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 15,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 7,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 16,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 7,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 17,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 18,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 19,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 9,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 20,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 12,
+     "fixedSpawns": [
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 2
+      },
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 2
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Story",
+    "id": "ZombieNote",
+    "displayName": "僵尸的信",
+    "extra": "剧情道具，衔接 1-10"
+   },
+   "specialRules": [
+    "双发射手入池（200 阳光，每轮 40 点伤害）",
+    "撑杆僵尸回归，与铁桶僵尸同场",
+    "1-10 传送带关前的最终压力测试"
+   ],
+   "confidence": "原版",
+   "notes": "自选卡关：availableCards 为空，运行时由玩家从 cardPool 选 6 张。"
+  },
+  {
+   "id": "1-10",
+   "stageId": 1,
+   "displayName": "传送带奖励关（大关收尾）",
+   "terrain": "Day",
+   "levelType": "ConveyorReward",
+   "gridColumns": 9,
+   "gridRows": 5,
+   "playableLanes": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "waterLanes": [],
+   "forbiddenPlantTiles": [],
+   "initialSun": 0,
+   "sunFallsFromSky": false,
+   "cardSelection": "传送带",
+   "cardSlots": 0,
+   "availableCards": [
+    "PeaShooter",
+    "Wallnut",
+    "CherryBomb",
+    "GatlingPea",
+    "SnowPea",
+    "PotatoMine",
+    "Chomper"
+   ],
+   "cardPool": [],
+   "hasConveyor": true,
+   "conveyor": {
+    "supplyMode": "概率",
+    "supplyCount": "无限",
+    "intervalSeconds": 8.0,
+    "capacity": 8,
+    "entries": [
+     {
+      "plantId": "PeaShooter",
+      "chancePercent": 20
+     },
+     {
+      "plantId": "Wallnut",
+      "chancePercent": 20
+     },
+     {
+      "plantId": "CherryBomb",
+      "chancePercent": 20
+     },
+     {
+      "plantId": "GatlingPea",
+      "chancePercent": 15
+     },
+     {
+      "plantId": "SnowPea",
+      "chancePercent": 10
+     },
+     {
+      "plantId": "PotatoMine",
+      "chancePercent": 10
+     },
+     {
+      "plantId": "Chomper",
+      "chancePercent": 5
+     }
+    ]
+   },
+   "waveCount": 20,
+   "flagWaveIndices": [
+    10,
+    20
+   ],
+   "finalWaveIndex": 20,
+   "firstWaveGate": {
+    "type": "Timer",
+    "plantId": "",
+    "count": 0,
+    "maxWaitSeconds": 20.0
+   },
+   "waves": [
+    {
+     "index": 1,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 2,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 3,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 2,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 4,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 5,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 6,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 6,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 7,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 8,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 9,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 8,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 10,
+     "isFlagWave": true,
+     "isFinalWave": false,
+     "pointBudget": 14,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 4
+      },
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 11,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 12,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 12,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 12,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 13,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 12,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 14,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 14,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 15,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 14,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 16,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 18,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 17,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 18,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 18,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 18,
+     "fixedSpawns": [
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 19,
+     "isFlagWave": false,
+     "isFinalWave": false,
+     "pointBudget": 20,
+     "fixedSpawns": [],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 12.0,
+     "earlyAdvanceRemainingThreshold": 1,
+     "notes": ""
+    },
+    {
+     "index": 20,
+     "isFlagWave": true,
+     "isFinalWave": true,
+     "pointBudget": 18,
+     "fixedSpawns": [
+      {
+       "zombieId": "Zombie",
+       "lane": 0,
+       "count": 7
+      },
+      {
+       "zombieId": "FlagZombie",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "Conehead",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "PoleVaulting",
+       "lane": 0,
+       "count": 1
+      },
+      {
+       "zombieId": "Buckethead",
+       "lane": 0,
+       "count": 1
+      }
+     ],
+     "randomPool": [
+      "Zombie",
+      "Conehead",
+      "Buckethead"
+     ],
+     "maxDurationSeconds": 45.0,
+     "earlyAdvanceDelaySeconds": 18.0,
+     "earlyAdvanceRemainingThreshold": 0,
+     "notes": ""
+    }
+   ],
+   "reward": {
+    "type": "Plant",
+    "id": "PuffShroom",
+    "displayName": "小喷菇",
+    "extra": "同时解锁第二大关 夜晚"
+   },
+   "specialRules": [
+    "无阳光、无向日葵、无天降阳光，植物全部来自传送带",
+    "传送带容量 8 格，必须留出空位，否则新卡片无法进入（本关核心难点）",
+    "樱桃炸弹供给量大，用于清理第 10 / 20 波",
+    "若传送带被不想要的植物堵死，可用铲子清掉腾位",
+    "五条线路都需要基础防御，优先每行 1 株寒冰射手减速",
+    "通关后解锁第二大关「夜晚」"
+   ],
+   "confidence": "原版",
+   "notes": "本关预算序列（2,2,2,6,6,6,8,8,8,14,12,12,12,14,14,18,18,18,20,18；合计 218）与第 10/20 波固定投放的种类与数量来自原版 wiki 实测值。原版页面标注的「1」语义存疑（可能指第 1 行、也可能指数 1 只），本表统一按随机行(lane=0)处理，待实测确认。7 种植物各自概率的对应关系为估算，概率集合本身来自原版。"
+  }
+ ]
+}

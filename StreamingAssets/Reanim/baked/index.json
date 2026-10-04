@@ -1,0 +1,322 @@
+{
+ "CherryBomb": {
+  "fps": 30.0,
+  "clips": {
+   "anim_explode": {
+    "frames": [
+     "CherryBomb_anim_explode_000.png",
+     "CherryBomb_anim_explode_001.png",
+     "CherryBomb_anim_explode_002.png",
+     "CherryBomb_anim_explode_003.png",
+     "CherryBomb_anim_explode_004.png",
+     "CherryBomb_anim_explode_005.png",
+     "CherryBomb_anim_explode_006.png",
+     "CherryBomb_anim_explode_007.png",
+     "CherryBomb_anim_explode_008.png",
+     "CherryBomb_anim_explode_009.png",
+     "CherryBomb_anim_explode_010.png",
+     "CherryBomb_anim_explode_011.png",
+     "CherryBomb_anim_explode_012.png",
+     "CherryBomb_anim_explode_013.png"
+    ],
+    "fps": 30.0
+   },
+   "anim_idle": {
+    "frames": [
+     "CherryBomb_anim_idle_000.png",
+     "CherryBomb_anim_idle_001.png",
+     "CherryBomb_anim_idle_002.png",
+     "CherryBomb_anim_idle_003.png",
+     "CherryBomb_anim_idle_004.png",
+     "CherryBomb_anim_idle_005.png",
+     "CherryBomb_anim_idle_006.png",
+     "CherryBomb_anim_idle_007.png",
+     "CherryBomb_anim_idle_008.png",
+     "CherryBomb_anim_idle_009.png",
+     "CherryBomb_anim_idle_010.png",
+     "CherryBomb_anim_idle_011.png",
+     "CherryBomb_anim_idle_012.png"
+    ],
+    "fps": 30.0
+   }
+  }
+ },
+ "PotatoMine": {
+  "fps": 12.0,
+  "clips": {
+   "anim_armed": {
+    "frames": [
+     "PotatoMine_anim_armed_000.png",
+     "PotatoMine_anim_armed_001.png",
+     "PotatoMine_anim_armed_002.png",
+     "PotatoMine_anim_armed_003.png",
+     "PotatoMine_anim_armed_004.png",
+     "PotatoMine_anim_armed_005.png",
+     "PotatoMine_anim_armed_006.png",
+     "PotatoMine_anim_armed_007.png",
+     "PotatoMine_anim_armed_008.png",
+     "PotatoMine_anim_armed_009.png",
+     "PotatoMine_anim_armed_010.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_blink": {
+    "frames": [
+     "PotatoMine_anim_blink_000.png",
+     "PotatoMine_anim_blink_001.png",
+     "PotatoMine_anim_blink_002.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_eye": {
+    "frames": [
+     "PotatoMine_anim_eye_000.png",
+     "PotatoMine_anim_eye_001.png",
+     "PotatoMine_anim_eye_002.png",
+     "PotatoMine_anim_eye_003.png",
+     "PotatoMine_anim_eye_004.png",
+     "PotatoMine_anim_eye_005.png",
+     "PotatoMine_anim_eye_006.png",
+     "PotatoMine_anim_eye_007.png",
+     "PotatoMine_anim_eye_008.png",
+     "PotatoMine_anim_eye_009.png",
+     "PotatoMine_anim_eye_010.png",
+     "PotatoMine_anim_eye_011.png",
+     "PotatoMine_anim_eye_012.png",
+     "PotatoMine_anim_eye_013.png",
+     "PotatoMine_anim_eye_014.png",
+     "PotatoMine_anim_eye_015.png",
+     "PotatoMine_anim_eye_016.png",
+     "PotatoMine_anim_eye_017.png",
+     "PotatoMine_anim_eye_018.png",
+     "PotatoMine_anim_eye_019.png",
+     "PotatoMine_anim_eye_020.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_face": {
+    "frames": [
+     "PotatoMine_anim_face_000.png",
+     "PotatoMine_anim_face_001.png",
+     "PotatoMine_anim_face_002.png",
+     "PotatoMine_anim_face_003.png",
+     "PotatoMine_anim_face_004.png",
+     "PotatoMine_anim_face_005.png",
+     "PotatoMine_anim_face_006.png",
+     "PotatoMine_anim_face_007.png",
+     "PotatoMine_anim_face_008.png",
+     "PotatoMine_anim_face_009.png",
+     "PotatoMine_anim_face_010.png",
+     "PotatoMine_anim_face_011.png",
+     "PotatoMine_anim_face_012.png",
+     "PotatoMine_anim_face_013.png",
+     "PotatoMine_anim_face_014.png",
+     "PotatoMine_anim_face_015.png",
+     "PotatoMine_anim_face_016.png",
+     "PotatoMine_anim_face_017.png",
+     "PotatoMine_anim_face_018.png",
+     "PotatoMine_anim_face_019.png",
+     "PotatoMine_anim_face_020.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_glow": {
+    "frames": [
+     "PotatoMine_anim_glow_000.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_idle": {
+    "frames": [
+     "PotatoMine_anim_idle_000.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_light": {
+    "frames": [
+     "PotatoMine_anim_light_000.png",
+     "PotatoMine_anim_light_001.png",
+     "PotatoMine_anim_light_002.png",
+     "PotatoMine_anim_light_003.png",
+     "PotatoMine_anim_light_004.png",
+     "PotatoMine_anim_light_005.png",
+     "PotatoMine_anim_light_006.png",
+     "PotatoMine_anim_light_007.png",
+     "PotatoMine_anim_light_008.png",
+     "PotatoMine_anim_light_009.png",
+     "PotatoMine_anim_light_010.png",
+     "PotatoMine_anim_light_011.png",
+     "PotatoMine_anim_light_012.png",
+     "PotatoMine_anim_light_013.png",
+     "PotatoMine_anim_light_014.png",
+     "PotatoMine_anim_light_015.png",
+     "PotatoMine_anim_light_016.png",
+     "PotatoMine_anim_light_017.png",
+     "PotatoMine_anim_light_018.png",
+     "PotatoMine_anim_light_019.png",
+     "PotatoMine_anim_light_020.png",
+     "PotatoMine_anim_light_021.png",
+     "PotatoMine_anim_light_022.png",
+     "PotatoMine_anim_light_023.png",
+     "PotatoMine_anim_light_024.png",
+     "PotatoMine_anim_light_025.png",
+     "PotatoMine_anim_light_026.png",
+     "PotatoMine_anim_light_027.png",
+     "PotatoMine_anim_light_028.png",
+     "PotatoMine_anim_light_029.png",
+     "PotatoMine_anim_light_030.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_mashed": {
+    "frames": [
+     "PotatoMine_anim_mashed_000.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_rise": {
+    "frames": [
+     "PotatoMine_anim_rise_000.png",
+     "PotatoMine_anim_rise_001.png",
+     "PotatoMine_anim_rise_002.png",
+     "PotatoMine_anim_rise_003.png",
+     "PotatoMine_anim_rise_004.png",
+     "PotatoMine_anim_rise_005.png",
+     "PotatoMine_anim_rise_006.png",
+     "PotatoMine_anim_rise_007.png",
+     "PotatoMine_anim_rise_008.png",
+     "PotatoMine_anim_rise_009.png",
+     "PotatoMine_anim_rise_010.png",
+     "PotatoMine_anim_rise_011.png",
+     "PotatoMine_anim_rise_012.png",
+     "PotatoMine_anim_rise_013.png",
+     "PotatoMine_anim_rise_014.png",
+     "PotatoMine_anim_rise_015.png",
+     "PotatoMine_anim_rise_016.png",
+     "PotatoMine_anim_rise_017.png",
+     "PotatoMine_anim_rise_018.png"
+    ],
+    "fps": 12.0
+   }
+  }
+ },
+ "Chomper": {
+  "fps": 12.0,
+  "clips": {
+   "anim_bite": {
+    "frames": [
+     "Chomper_anim_bite_000.png",
+     "Chomper_anim_bite_001.png",
+     "Chomper_anim_bite_002.png",
+     "Chomper_anim_bite_003.png",
+     "Chomper_anim_bite_004.png",
+     "Chomper_anim_bite_005.png",
+     "Chomper_anim_bite_006.png",
+     "Chomper_anim_bite_007.png",
+     "Chomper_anim_bite_008.png",
+     "Chomper_anim_bite_009.png",
+     "Chomper_anim_bite_010.png",
+     "Chomper_anim_bite_011.png",
+     "Chomper_anim_bite_012.png",
+     "Chomper_anim_bite_013.png",
+     "Chomper_anim_bite_014.png",
+     "Chomper_anim_bite_015.png",
+     "Chomper_anim_bite_016.png",
+     "Chomper_anim_bite_017.png",
+     "Chomper_anim_bite_018.png",
+     "Chomper_anim_bite_019.png",
+     "Chomper_anim_bite_020.png",
+     "Chomper_anim_bite_021.png",
+     "Chomper_anim_bite_022.png",
+     "Chomper_anim_bite_023.png",
+     "Chomper_anim_bite_024.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_chew": {
+    "frames": [
+     "Chomper_anim_chew_000.png",
+     "Chomper_anim_chew_001.png",
+     "Chomper_anim_chew_002.png",
+     "Chomper_anim_chew_003.png",
+     "Chomper_anim_chew_004.png",
+     "Chomper_anim_chew_005.png",
+     "Chomper_anim_chew_006.png",
+     "Chomper_anim_chew_007.png",
+     "Chomper_anim_chew_008.png",
+     "Chomper_anim_chew_009.png",
+     "Chomper_anim_chew_010.png",
+     "Chomper_anim_chew_011.png",
+     "Chomper_anim_chew_012.png",
+     "Chomper_anim_chew_013.png",
+     "Chomper_anim_chew_014.png",
+     "Chomper_anim_chew_015.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_idle": {
+    "frames": [
+     "Chomper_anim_idle_000.png",
+     "Chomper_anim_idle_001.png",
+     "Chomper_anim_idle_002.png",
+     "Chomper_anim_idle_003.png",
+     "Chomper_anim_idle_004.png",
+     "Chomper_anim_idle_005.png",
+     "Chomper_anim_idle_006.png",
+     "Chomper_anim_idle_007.png",
+     "Chomper_anim_idle_008.png",
+     "Chomper_anim_idle_009.png",
+     "Chomper_anim_idle_010.png",
+     "Chomper_anim_idle_011.png",
+     "Chomper_anim_idle_012.png",
+     "Chomper_anim_idle_013.png",
+     "Chomper_anim_idle_014.png",
+     "Chomper_anim_idle_015.png",
+     "Chomper_anim_idle_016.png",
+     "Chomper_anim_idle_017.png",
+     "Chomper_anim_idle_018.png",
+     "Chomper_anim_idle_019.png",
+     "Chomper_anim_idle_020.png",
+     "Chomper_anim_idle_021.png",
+     "Chomper_anim_idle_022.png",
+     "Chomper_anim_idle_023.png",
+     "Chomper_anim_idle_024.png"
+    ],
+    "fps": 12.0
+   },
+   "anim_swallow": {
+    "frames": [
+     "Chomper_anim_swallow_000.png",
+     "Chomper_anim_swallow_001.png",
+     "Chomper_anim_swallow_002.png",
+     "Chomper_anim_swallow_003.png",
+     "Chomper_anim_swallow_004.png",
+     "Chomper_anim_swallow_005.png",
+     "Chomper_anim_swallow_006.png",
+     "Chomper_anim_swallow_007.png",
+     "Chomper_anim_swallow_008.png",
+     "Chomper_anim_swallow_009.png",
+     "Chomper_anim_swallow_010.png",
+     "Chomper_anim_swallow_011.png",
+     "Chomper_anim_swallow_012.png",
+     "Chomper_anim_swallow_013.png",
+     "Chomper_anim_swallow_014.png",
+     "Chomper_anim_swallow_015.png",
+     "Chomper_anim_swallow_016.png",
+     "Chomper_anim_swallow_017.png",
+     "Chomper_anim_swallow_018.png",
+     "Chomper_anim_swallow_019.png",
+     "Chomper_anim_swallow_020.png",
+     "Chomper_anim_swallow_021.png",
+     "Chomper_anim_swallow_022.png",
+     "Chomper_anim_swallow_023.png",
+     "Chomper_anim_swallow_024.png",
+     "Chomper_anim_swallow_025.png",
+     "Chomper_anim_swallow_026.png",
+     "Chomper_anim_swallow_027.png"
+    ],
+    "fps": 12.0
+   }
+  }
+ }
+}
